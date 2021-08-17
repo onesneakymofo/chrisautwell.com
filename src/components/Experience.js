@@ -35,7 +35,7 @@ const Experience = () => {
             <p className="flex justify-between">
               <strong>{career.title}</strong>
               <span className="text-gray-500 text-right">
-                <a target="_blank" href="{career.website}" rel="noreferrer">
+                <a target="_blank" href={career.website} rel="noreferrer">
                   {career.company}
                 </a>
               </span>

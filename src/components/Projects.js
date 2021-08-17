@@ -27,7 +27,7 @@ const Projects = () => {
         {projects.map((project, index) => {
           return (
             <div className="mt-6" key={index}>
-              <a href="{project.website}" target="_blank" rel="noreferrer">
+              <a href={project.website} target="_blank" rel="noreferrer">
                 <div className="py-4 px-8 shadow-xl bg-indigo-800 text-white rounded-md w-100">
                   <div className="flex justify-between">
                     <div className="font-semibold mb-4">{project.name}</div>
