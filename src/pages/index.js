@@ -1,29 +1,31 @@
 import * as React from "react"
-import { Link } from "gatsby"
-import { StaticImage } from "gatsby-plugin-image"
 
-import Layout from "../components/layout"
-import SEO from "../components/seo"
+import Logo from '../components/Logo';
+import Hero from '../components/Hero';
+import Projects from '../components/Projects';
+import Education from '../components/Education';
+import Experience from '../components/Experience';
+import Technologies from '../components/Technologies';
 
 const IndexPage = () => (
-  <Layout>
-    <SEO title="Home" />
-    <h1>Hi people</h1>
-    <p>Welcome to your new Gatsby site.</p>
-    <p>Now go build something great.</p>
-    <StaticImage
-      src="../images/gatsby-astronaut.png"
-      width={300}
-      quality={95}
-      formats={["AUTO", "WEBP", "AVIF"]}
-      alt="A Gatsby astronaut"
-      style={{ marginBottom: `1.45rem` }}
-    />
-    <p>
-      <Link to="/page-2/">Go to page 2</Link> <br />
-      <Link to="/using-typescript/">Go to "Using TypeScript"</Link>
-    </p>
-  </Layout>
+  <>
+    <div className="w-100 bg-gradient-to-br from-indigo-700 to-indigo-800 pt-10 pb-5 px-5 bg-indigo-600">
+      <div className="max-w-2xl mx-auto">
+        <Logo />
+        <Hero />
+        <Projects />
+      </div>
+    </div>
+    <div className="w-100 bg-white px-5">
+      <div className="grid grid-flow-col grid-cols-2 gap-4 max-w-2xl mx-auto">
+        <Experience />
+        <Education />
+      </div>
+      <div className="max-w-2xl mx-auto">
+        <Technologies />
+      </div>
+    </div>
+  </>
 )
 
 export default IndexPage
