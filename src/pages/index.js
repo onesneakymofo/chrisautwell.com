@@ -17,7 +17,7 @@ const IndexPage = () => (
       </div>
     </div>
     <div className="w-100 bg-white px-5">
-      <div className="grid grid-flow-col grid-cols-2 gap-4 max-w-2xl mx-auto">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-4 max-w-2xl mx-auto">
         <Experience />
         <Education />
       </div>

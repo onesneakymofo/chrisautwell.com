@@ -23,7 +23,7 @@ const Technologies = () => {
 	return (
 		<div className="text-gray-800 p-2 rounded-lg">
 			<div className="py-3 text-xl font-bold">Technologies</div>
-			<div className="grid grid-flow-col grid-cols-auto gap-5 text-gray-900">
+			<div className="grid grid-cols-2 md:grid-cols-4 gap-5 text-gray-900">
 				{technologies.map((technology, index) => {
 					return (
 						<div key={index}>

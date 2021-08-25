@@ -14,7 +14,7 @@ const Projects = () => {
     <>
       <div className="mb-10">
         <div className="flex mt-10 justify-between items-center">
-          <h3 className="text-3xl text-white font-bold">Current Projects</h3>
+          <h3 className="text-xl md:text-2xl text-white font-bold">Current Projects</h3>
           <a
             href="https://www.github.com/onesneakymofo"
             target="_blank"

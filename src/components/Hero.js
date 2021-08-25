@@ -31,7 +31,7 @@ const Hero = () => {
 
   return (
     <>
-      <div className="text-5xl font-large text-white text-center font-bold">
+      <div className="text-2xl md:text-4xl font-large text-white text-center font-bold">
         Hey, hey, I'm Chris.
       </div>
       <p className="text-indigo-300 text-center text-2xl my-5 leading-10">
@@ -42,7 +42,7 @@ const Hero = () => {
         have two sweet daughters and an awesome girlfriend. My hobbies include
         <strong className="text-indigo-200">
           {" "}
-          video games, board games,
+          video games, board games, music,
         </strong>{" "}
         and <strong>reading</strong>. I'm always down to chat so feel free to
         reach out!
