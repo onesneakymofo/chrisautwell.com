@@ -39,7 +39,7 @@ const Hero = () => {
         <strong className="text-indigo-200"> Birmingham, Alabama.</strong>&nbsp;
         I have been programming professionally over
         <strong className="text-indigo-200"> {careerLength()} years</strong>. I
-        have two sweet daughters and an awesome girlfriend. My hobbies include
+        have two sweet daughters with my awesome girlfriend. My hobbies include
         <strong className="text-indigo-200">
           {" "}
           video games, board games, music,
