@@ -1,13 +1,5 @@
 import * as React from "react"
-
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
-import {
-  faTwitter,
-  faGithub,
-  faInstagram,
-  faSpotify,
-  faLinkedin,
-} from "@fortawesome/free-brands-svg-icons"
+import {GithubIcon, InstagramIcon,LinkedInIcon, SpotifyIcon, TwitterIcon } from '../components/ui/Icon';
 
 const Hero = () => {
   function dateConversion(date) {
@@ -52,31 +44,31 @@ const Hero = () => {
           className="hover:text-white"
           href="https://www.linkedin.com/in/chris-autwell/"
         >
-          <FontAwesomeIcon icon={faLinkedin} />
+          <LinkedInIcon />
         </a>
         <a
           className="hover:text-white"
           href="https://www.twitter.com/onesneakymofo"
         >
-          <FontAwesomeIcon icon={faTwitter} />
+          <TwitterIcon />
         </a>
         <a
           className="hover:text-white"
           href="https://www.github.com/onesneakymofo"
         >
-          <FontAwesomeIcon icon={faGithub} />
+          <GithubIcon />
         </a>
         <a
           className="hover:text-white"
           href="https://www.instagram.com/onesneakymofo"
         >
-          <FontAwesomeIcon icon={faInstagram} />
+          <InstagramIcon />
         </a>
         <a
           className="hover:text-white"
           href="https://open.spotify.com/user/1216246547"
         >
-          <FontAwesomeIcon icon={faSpotify} />
+          <SpotifyIcon />
         </a>
       </p>
     </>
