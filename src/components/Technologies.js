@@ -1,4 +1,6 @@
 import * as React from "react"
+import {Header} from "./ui/Header"
+import {Section} from "./ui/Section"
 
 const Technologies = () => {
 	const technologies = [
@@ -16,30 +18,29 @@ const Technologies = () => {
 		},
 		{
 			name: "Services",
-			items: ["Github", "Jira", "AWS", "Figma", "LucidChart"],
+			items: ["Github", "Jira", "AWS", "Figma", "LucidChart", "Asana"],
 		},
 	]
 
 	return (
-		<div className="text-gray-800 p-2 rounded-lg">
-			<div className="py-3 text-xl font-bold">Technologies</div>
+		<Section>
+			<Header size="sm" className="mb-3">Technologies</Header>
 			<div className="grid grid-cols-2 md:grid-cols-4 gap-5 text-gray-900">
-				{technologies.map((technology, index) => {
-					return (
+				{technologies.map((technology, 	index) => (
 						<div key={index}>
-							<div className="text-md font-semibold mb-2">
+							<Header size="xs" className="mb-2">
 								{technology.name}
-							</div>
+							</Header>
 							<ul className="space-y-2">
-								{technology.items.map((item, index) => {
-									return <li key={index}>{item}</li>
-								})}
+								{technology.items.map((item, index) => (
+									<li key={index}>{item}</li>
+								))}
 							</ul>
 						</div>
 					)
-				})}
+				)}
 			</div>
-		</div>
+		</Section>
 	)
 }
 

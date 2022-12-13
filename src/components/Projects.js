@@ -1,6 +1,6 @@
 import * as React from "react"
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
-import { faArrowRight } from "@fortawesome/free-solid-svg-icons"
+import {Header} from "./ui/Header"
+import {RightArrowIcon} from "./ui/Icon"
 
 const Projects = () => {
   const projects = [
@@ -14,7 +14,7 @@ const Projects = () => {
     <>
       <div className="mb-10">
         <div className="flex mt-10 justify-between items-center">
-          <h3 className="text-xl md:text-2xl text-white font-bold">Current Projects</h3>
+          <Header size="md" className="text-white">Current Projects</Header>
           <a
             href="https://www.github.com/onesneakymofo"
             target="_blank"
@@ -30,8 +30,8 @@ const Projects = () => {
               <a href={project.website} target="_blank" rel="noreferrer">
                 <div className="py-4 px-8 shadow-xl bg-indigo-800 text-white rounded-md w-100">
                   <div className="flex justify-between">
-                    <div className="font-semibold mb-4">{project.name}</div>
-                    <FontAwesomeIcon icon={faArrowRight} />
+                    <Header size="xs">{project.name}</Header>
+                    <RightArrowIcon />
                   </div>
                   <p>{project.description}</p>
                 </div>

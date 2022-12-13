@@ -1,6 +1,6 @@
 import * as React from "react"
 
-import Logo from '../components/Logo';
+import {Logo} from '../components/ui/Logo';
 import Hero from '../components/Hero';
 import Projects from '../components/Projects';
 import Education from '../components/Education';

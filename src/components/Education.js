@@ -1,4 +1,6 @@
 import * as React from "react"
+import {Header} from "./ui/Header"
+import {Section} from "./ui/Section"
 
 const Education = () => {
   const degrees = [
@@ -15,20 +17,20 @@ const Education = () => {
   ]
 
   return (
-    <div className="text-gray-800 p-2 my-6 rounded-lg">
-      <div className="py-3 text-xl font-bold">Education</div>
-      {degrees.map((degree, index) => {
-        return (
+    <Section>
+      <Header size="sm" className="mb-3">Education</Header>
+      {
+        degrees.map((degree, index) => (
           <div className="pb-3" key={index}>
             <div className="text-xs text-gray-500">{degree.years}</div>
-            <p>
+            <Header size="xs">
               <strong>{degree.degree}</strong>
-            </p>
+            </Header>
             <p className="text-sm">{degree.college}</p>
           </div>
         )
-      })}
-    </div>
+      )}
+    </Section>
   )
 }
 

@@ -1,13 +1,22 @@
 import * as React from "react"
+import {Header} from "./ui/Header"
+import {Section} from "./ui/Section"
 
 const Experience = () => {
   const careers = [
     {
       title: "Sr. Software Engineer",
+      company: "@Landing",
+      website: "https://www.hellolanding.com",
+      location: "Remote",
+      years: "2021-2022",
+    },
+    {
+      title: "Sr. Software Engineer",
       company: "@ProctorU",
       website: "https://www.proctoru.com",
-      location: "Birmingham, Alabama",
-      years: "Current",
+      location: "Remote",
+      years: "2018-2021",
     },
     {
       title: "Software Engineer",
@@ -26,10 +35,10 @@ const Experience = () => {
   ]
 
   return (
-    <div className="text-gray-800 p-2 my-6 rounded-lg">
-      <div className="py-3 text-xl font-bold">Work</div>
-      {careers.map((career, index) => {
-        return (
+    <Section>
+      <Header size="sm" className="mb-3">Work</Header>
+      {
+        careers.map((career, index) => (
           <div className="pb-3" key={index}>
             <div className="text-xs text-gray-500">{career.years}</div>
             <p className="flex justify-between">
@@ -43,8 +52,8 @@ const Experience = () => {
             <p className="text-sm">{career.location}</p>
           </div>
         )
-      })}
-    </div>
+      )}
+    </Section>
   )
 }
 
