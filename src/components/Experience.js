@@ -26,7 +26,7 @@ const Experience = () => {
       years: "2016-2018",
     },
     {
-      title: "Jr. Software Engineer",
+      title: "Web Developer",
       company: "@ProctorU",
       website: "https://www.proctoru.com",
       location: "Birmingham, Alabama",

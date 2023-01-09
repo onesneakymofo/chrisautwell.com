@@ -1,5 +1,5 @@
 import * as React from "react"
-import {GithubIcon, InstagramIcon,LinkedInIcon, SpotifyIcon, TwitterIcon } from '../components/ui/Icon';
+import {GithubIcon, InstagramIcon,LinkedInIcon, SpotifyIcon, TwitterIcon, ResumeIcon } from '../components/ui/Icon';
 
 const Hero = () => {
   function dateConversion(date) {
@@ -39,7 +39,7 @@ const Hero = () => {
         and <strong>reading</strong>. I'm always down to chat so feel free to
         reach out!
       </p>
-      <p className="grid grid-flow-col grid-cols-auto gap-x-5 text-center mx-auto text-indigo-500 text-3xl my-10">
+      <p className="flex flex-row gap-x-5 text-center items-center justify-between mx-auto text-indigo-500 text-3xl my-10">
         <a
           className="hover:text-white"
           href="https://www.linkedin.com/in/chris-autwell/"
@@ -69,6 +69,12 @@ const Hero = () => {
           href="https://open.spotify.com/user/1216246547"
         >
           <SpotifyIcon />
+        </a>
+        <a
+          className="hover:text-white"
+          href="/Chris_Autwell_Senior_Software_Engineer_Resume.pdf"
+        >
+          <ResumeIcon />
         </a>
       </p>
     </>
