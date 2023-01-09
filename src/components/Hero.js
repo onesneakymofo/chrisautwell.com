@@ -72,7 +72,7 @@ const Hero = () => {
         </a>
         <a
           className="hover:text-white"
-          href="/Chris_Autwell_Senior_Software_Engineer_Resume.pdf"
+          href="https://drive.google.com/file/d/1DBOcUd3t1HsRuuFKqGOvA2sGA4JJD9-S/view?usp=share_link"
         >
           <ResumeIcon />
         </a>
