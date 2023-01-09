@@ -5,9 +5,19 @@ import {RightArrowIcon} from "./ui/Icon"
 const Projects = () => {
   const projects = [
     {
-      name: "Mantle",
+      name: "Reddio",
+      description: "Reddio is a music player curated by the users of Reddit built in Ruby on Rails and React.",
+      website: "https://github.com/onesneakymofo/reddio",
+    },
+    {
+      name: "Takeoff",
+      description: "Takeoff is a reusable, portable headless component library built in React. It can be installed one component at a time or several.",
+      website: "https://github.com/onesneakymofo/reddio",
+    },
+    {
+      name: "Mantle (Deprecated)",
       description: "Mantle is intended to be a utility-based UI library built using React. It will expedite the creation of design systems.",
-      website: "https://github.com/onesneakymofo/mantle",
+      website: "hhttps://github.com/onesneakymofo/mantle-deprecated",
     },
   ]
   return (
