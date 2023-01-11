@@ -26,7 +26,7 @@ const Hero = () => {
       <div className="text-2xl md:text-4xl font-large text-white text-center font-bold">
         Hey, hey, I'm Chris.
       </div>
-      <p className="text-indigo-300 text-center text-2xl my-5 leading-10">
+      <p className="text-indigo-300 text-center text-lg sm:text-2xl my-5 leading-10">
         I'm a {birthDate()}-year old software engineer from
         <strong className="text-indigo-200"> Birmingham, Alabama.</strong>&nbsp;
         I have been programming professionally over
@@ -39,7 +39,7 @@ const Hero = () => {
         and <strong>reading</strong>. I'm always down to chat so feel free to
         reach out!
       </p>
-      <p className="flex flex-row gap-x-5 text-center items-center justify-between mx-auto text-indigo-500 text-3xl my-10">
+      <p className="flex flex-row gap-x-1 lg:gap-x-5 text-center items-center justify-between mx-auto text-indigo-500 text-sm my-10">
         <a
           className="hover:text-white"
           href="https://www.linkedin.com/in/chris-autwell/"
