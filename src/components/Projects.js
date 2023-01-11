@@ -12,7 +12,7 @@ const Projects = () => {
     {
       name: "Takeoff",
       description: "Takeoff is a reusable, portable headless component library built in React. It can be installed one component at a time or several.",
-      website: "https://github.com/onesneakymofo/reddio",
+      website: "https://github.com/onesneakymofo/takeoff",
     },
     {
       name: "Mantle (Deprecated)",
@@ -29,7 +29,7 @@ const Projects = () => {
             href="https://www.github.com/onesneakymofo"
             target="_blank"
             rel="noreferrer"
-            className="inline-block px-3 py-2 rounded antialiased tracking-wide border transform hover:scale-105 font-medium text-center bg-gray-300 border-gray-300 font-semibold text-gray-900 hover:bg-gray-200 hover:border-gray-200"
+            className="inline-block px-3 py-2 rounded antialiased tracking-wide border transform hover:scale-105 font-medium text-center bg-gray-300 border-gray-300 font-semibold text-gray-900 hover:bg-gray-200 hover:border-gray-200 text-sm md:text-lg"
           >
             View Github
           </a>
